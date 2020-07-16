@@ -61,14 +61,14 @@ For example have a look at the following piece of code:
             "text": "Phases of the moon with Emojis: ${moonAnimation[(Time.milliseconds(localTime/300)) % 8]}"
           },
  
-You can see a binding for an array of emoji showing different moon phases characters to the the name "moonAnimation. Within the line "text" there is an expression "${moonAnimation[(Time.milliseconds(localTime/300)) % 8]}" which does all the work. The expression "%8" makes sure that the index does not run out of bounds. The part "localTime/300" triggers the speed of the animation. Careful readers will notice that the animation might not run fluently when the size of the array does not match the numbers of milliseconds in a second. In practice I found this effect barely noticable.
+You can see a binding for an array of emoji characters showing different moon phases to the the name "moonAnimation. Within the line "text" there is an expression "${moonAnimation[(Time.milliseconds(localTime/300)) % 8]}" which does **all the work**. The expression "%8" makes sure that the index does not run **out of bounds**. The part "localTime/300" triggers the **speed of the animation**. Careful readers will notice that the animation might not run fluently when the size of the array does not match the numbers of milliseconds in a second. In practice I found this effect barely noticable.
 
 
 ## Where can I see this running?
 
-I put a number of ideas together into one APL to show what I am talking about. You will find a lot of snippets in the code which you might want to use for your own purposes. Feel free to do so! 
+I put a number of ideas together into one APL to show what I am talking about. You will find a lot of **snippets** in the code which you might want to **use for your own purposes**. Feel free to do so! 
 
-The code will execute right within the APL Authoring tool (https://developer.amazon.com/alexa/console/ask/displays#/resource/):
+The code will execute right within the **APL Authoring tool** (https://developer.amazon.com/alexa/console/ask/displays#/resource/):
 
 After having called aboce link:
 - Use the "Start from Scratch" option
