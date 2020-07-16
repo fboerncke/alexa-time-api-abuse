@@ -20,8 +20,9 @@ This concept gives us a number of options:
 - Properties like opacity and color can be updated automatically to build **smooth effects**.
 - Prepared values from an array can be accessed using Time-results as index. I found this flipbook like approach extremly powerful to **run simple effects**. 
 - Using chains of Emojis you can build some nice **self running animations**.
-- What is great: the APL "transform" property will evaluate and update the Time values within its settings. This allows **rotation** and **rescaling** running as endless loop in the background. The code example shows a "rocket" and a "heartbeat" animation demonstrating what is possible.
+- What is great: the APL "transform" property will evaluate and update the Time values within its settings. This allows **rotation** and **rescaling** running as endless loop in the background. The complete code example shows a "rocket" and a "heartbeat" animation demonstrating what is possible.
 
+But first let us look at a basic example.
 
 ## Code example
 
