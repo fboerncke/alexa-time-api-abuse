@@ -22,9 +22,17 @@ This concept gives us a number of options:
 - Using chains of Emojis you can build some nice **self running animations**.
 - What is great: the APL "transform" property will evaluate and update the Time values within its settings. This allows **rotation** and **rescaling** running as endless loop in the background. The complete code example shows a "rocket" and a "heartbeat" animation demonstrating what is possible.
 
+
+## Example APL
+
+The attached APL document will create an animated appearance similar as follows:
+
+![TimeApi Demo APL](TimeApi.png?raw=true "Title")
+
+
 But first let us look at a basic example.
 
-## Code example
+## Code example explained
 
 When working with arrays you might have to do some adjustments. If you want to iterate within a loop over 8 elements while Time.seconds() runs from 0 to 59 or Time.milliseconds() runs from 0 to 9999 there is some work to do not to run out of bounds. 
 
