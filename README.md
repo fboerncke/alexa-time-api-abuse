@@ -9,7 +9,7 @@ The obvious use case for this functionality is to make it easy to implement cloc
 
 Now it turns out there are some other use cases for this Time feature which are not that obvious: The idea is to **(mis/ab)-use** the dynamic nature of the timer API for simple auto updating animations and content updates that do not require APL command execution. Such animations even proceed to run while Alexa is waiting for user feedback or while there is an ongoing utterance.  
 
-In my own skills I use this technique for quite some time. As I did not find it documented anywhere I want to share my experiences with the community. But why does this work? After some evaluation it turns out that actually every APL property which is marked as "dynamic" can be updated via runtime using Time-API. Unfortunately this technique will not work with so called ["styled properties"](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/apl-styled-properties.html) which would be an even greater thing to have.
+In my own skills I use this technique for quite some time ("[Commander Speedo]"(https://applicate.de/alexa-skill-commander-speedo/index.html)). As I did not find this approach documented anywhere I want to share my experiences with the community. But why does this work? After some evaluation it turns out that actually every APL property which is marked as "dynamic" can be updated via runtime using Time-API. Unfortunately this technique will not work with so called ["styled properties"](https://developer.amazon.com/en-US/docs/alexa/alexa-presentation-language/apl-styled-properties.html) which would be an even greater thing to have.
 
 
 ## Some use cases
@@ -26,7 +26,7 @@ But first let us look at a basic example.
 
 ## Code example
 
-You might have to do some adjustments though. If you want to iterate within a loop over 8 elements while Time.seconds() runs from 0 to 59 or Time.milliseconds() runs from 0 to 9999 there is some work to do not to run out of bounds. 
+When working with arrays you might have to do some adjustments. If you want to iterate within a loop over 8 elements while Time.seconds() runs from 0 to 59 or Time.milliseconds() runs from 0 to 9999 there is some work to do not to run out of bounds. 
 
 For example have a look at the following piece of code:
 
